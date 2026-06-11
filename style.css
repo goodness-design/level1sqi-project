@@ -24,21 +24,31 @@
 
 .intro-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     background: #000;
 }
 
 
 .intro-video{
-    width: 100%;
-    height: 100%;
+    /* width: 50%;
+    height: 40%; */
     object-fit: cover;
     position: absolute;
-    inset: 0;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    /* top: 50px; */
+    /* inset: 0; */
     animation: fadeVideo 2s ease forwards;
     animation-delay: 7s;
+    transform: translate(-50%,-50%);
+
 }
+
+
+
+
 
 /* Common text styles */
 .text1,
@@ -53,25 +63,48 @@
     color: white;
     opacity: 0;
     font-style: italic;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 57.8px;
     
 }
 
 /* Text 1 */
 .text1{
-    font-size: 4rem;
+    font-size: 2.5rem;
     animation: text1Anim 4s ease forwards;
     animation-delay: 9s;
 }
 
+
+.text1 h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+/* .text1 span{
+    font-weight: 500;
+    font-size: 2.5rem;
+    animation: text1Anim 4s ease forwards;
+    animation-delay: 8s;
+} */
+
+.text1 div{
+    font-size: 1.2rem;
+    font-weight: 400;
+    animation: text1Anim 4s ease forwards;
+    animation-delay: 10s;
+}
+
 .text2 p{
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
 .text2{
-    font-size: 1.5rem;
-    line-height: 1.7;
+    
+    line-height: 1;
     animation: text2Anim 4s ease forwards;
     animation-delay: 13s;
 }
@@ -93,7 +126,7 @@
 .text3 a{
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 20px 25px;
     background: black;
     color: yellow;
     text-decoration: none;
@@ -102,8 +135,8 @@
 
 
 .text3 a:hover{
-    background: yellow;
-    color: black;
+    background: rgba(255, 255, 0, 0.26);
+    color: yellow;
     transition: 0.3s ease;
 }
 
